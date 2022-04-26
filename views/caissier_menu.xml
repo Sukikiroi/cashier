@@ -1,0 +1,105 @@
+<odoo>
+<!-- Caissier App Menu -->
+<menuitem id="menu_caissier" name="الصندوق" />
+ 
+
+
+
+
+ 
+
+
+
+<!-- Action to open the Clients list -->
+<record id="action_caissier_openning" model="ir.actions.act_window">
+<field name="name"> طلب  الافتتاح </field>
+<field name="res_model">caissier.openning</field>
+<field name="view_id" ref="caissier.view_form_spending"/>
+<field name="view_id" ref="caissier.view_tree_spending"/>
+<field name="view_mode">tree,graph,kanban,form</field>
+</record>
+
+
+<menuitem id="menu_caissier_request_openning"
+name="   الافتتاح   "
+parent="menu_caissier"
+action="action_caissier_openning"
+/>
+
+
+
+
+
+
+<!-- Action to open the Clients list -->
+<record id="action_caissier_income" model="ir.actions.act_window">
+<field name="name"> طلب  المداخيل </field>
+<field name="res_model">caissier.income</field>
+<field name="view_id" ref="caissier.view_form_income"/>
+<field name="view_id" ref="caissier.view_tree_income"/>
+<field name="view_mode">tree,graph,kanban,form</field>
+</record>
+
+
+<menuitem id="menu_caissier_request_Income"
+name="   المداخيل   "
+parent="menu_caissier"
+action="action_caissier_income"
+/>
+
+
+<!-- Action to open the Clients list
+<record id="action_caissier_balance" model="ir.actions.act_window">
+<field name="name"> طلب  ايداع </field>
+<field name="res_model">caissier.balance</field>
+<field name="view_id" ref="caissier.view_form_balance"/>
+<field name="view_id" ref="caissier.view_tree_balance"/>
+<field name="view_mode">tree,graph,kanban,form</field>
+</record>
+
+<menuitem id="menu_caissier_request_Balance"
+name="   الرصيد   "
+parent="menu_caissier"
+action="action_caissier_balance"
+/> -->
+
+
+<!-- Action to open the Clients list -->
+<record id="action_caissier_closing" model="ir.actions.act_window">
+<field name="name"> طلب  الغلق </field>
+<field name="res_model">caissier.spending</field>
+<field name="view_id" ref="caissier.view_form_closing"/>
+<field name="view_id" ref="caissier.view_tree_closing"/>
+<field name="view_mode">tree,graph,kanban,form</field>
+</record>
+
+<menuitem id="menu_caissier_request_Closing"
+name="   الغلق   "
+parent="menu_caissier"
+action="action_caissier_closing"
+/>
+
+
+
+
+
+
+
+
+
+
+<!-- Action to open the Clients list -->
+<record id="action_caissier_spending" model="ir.actions.act_window">
+<field name="name"> طلب  المصاريف </field>
+<field name="res_model">caissier.spending</field>
+<field name="view_id" ref="caissier.view_form_spending"/>
+<field name="view_id" ref="caissier.view_tree_spending"/>
+<field name="view_mode">tree,graph,kanban,form</field>
+</record>
+
+<menuitem id="menu_caissier_request_Expenses"
+name="   المصاريف   "
+parent="menu_caissier"
+action="action_caissier_spending"
+/>
+</odoo>

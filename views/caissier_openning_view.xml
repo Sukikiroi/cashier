@@ -1,0 +1,67 @@
+<odoo>
+<record id="view_form_openning" model="ir.ui.view">
+<field name="name"> Openning Form</field>
+<field name="model">caissier.openning</field>
+<field name="arch" type="xml">
+<form class="form">
+<header>
+<!-- Buttons will go here -->
+ 
+
+</header>
+<sheet>
+<!-- Content goes here: -->
+<group class="groupone">
+ 
+<field name="time"/>
+<field name="date" />
+ 
+ 
+<div class="container">
+  <notebook>
+      <page string="طبقا لما هو مدون في المحضرين التاليين">
+        <group>
+ 
+
+ 
+        </group>
+      
+      </page>
+   
+      <page string=" النتيجة المتوصل اليها ">
+              <group>
+ 
+              </group>
+        </page>
+    </notebook>
+
+</div>
+</group>
+</sheet>
+</form>
+</field>
+</record>
+
+
+<record id="view_tree_openning" model="ir.ui.view">
+<field name="name">Openning List</field>
+<field name="model">caissier.openning</field>
+<field name="arch" type="xml">
+<tree>
+ 
+<field name="time"/>
+<field name="date" />
+
+ 
+
+</tree>
+</field>
+</record>
+
+
+
+
+ 
+
+
+</odoo>

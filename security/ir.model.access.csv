@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_caissier_openning,CaissierUser,model_caissier_openning,caissier_group_user,1,1,1,0
+access_caissier_closing,CaissierUser,model_caissier_closing,caissier_group_user,1,1,1,0
+access_caissier_income,CaissierUser,model_caissier_income,caissier_group_user,1,1,1,0
+access_caissier_spending,CaissierUser,model_caissier_spending,caissier_group_user,1,1,1,0
+
