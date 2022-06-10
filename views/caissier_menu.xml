@@ -16,7 +16,9 @@
 <field name="res_model">caissier.openning</field>
 <field name="view_id" ref="caissier.view_form_spending"/>
 <field name="view_id" ref="caissier.view_tree_spending"/>
+
 <field name="view_mode">tree,graph,kanban,form</field>
+
 </record>
 
 
@@ -25,8 +27,7 @@ name="   الافتتاح   "
 parent="menu_caissier"
 action="action_caissier_openning"
 />
-
-
+ 
 
 
 
@@ -48,20 +49,29 @@ action="action_caissier_income"
 />
 
 
-<!-- Action to open the Clients list
+ 
 <record id="action_caissier_balance" model="ir.actions.act_window">
-<field name="name"> طلب  ايداع </field>
+<field name="name">     الرصيد </field>
 <field name="res_model">caissier.balance</field>
-<field name="view_id" ref="caissier.view_form_balance"/>
-<field name="view_id" ref="caissier.view_tree_balance"/>
-<field name="view_mode">tree,graph,kanban,form</field>
+<field name="view_mode">tree,graph,kanban</field>
+</record>
+
+
+<record model="ir.actions.act_url" id="action_google_url">
+
+    <field name="name">Open google.com</field>
+
+    <field name="url">http://localhost:3000/</field>
+
+    <field name="target">self</field>
+
 </record>
 
 <menuitem id="menu_caissier_request_Balance"
 name="   الرصيد   "
 parent="menu_caissier"
-action="action_caissier_balance"
-/> -->
+action="action_google_url"
+/>  
 
 
 <!-- Action to open the Clients list -->
@@ -73,10 +83,24 @@ action="action_caissier_balance"
 <field name="view_mode">tree,graph,kanban,form</field>
 </record>
 
+
+
+<record model="ir.actions.act_url" id="action_closing_url">
+
+    <field name="name">Open google.com</field>
+
+    <field name="url">http://localhost:3000/closing</field>
+
+    <field name="target">self</field>
+
+</record>
+
+
+
 <menuitem id="menu_caissier_request_Closing"
 name="   الغلق   "
 parent="menu_caissier"
-action="action_caissier_closing"
+action="action_closing_url"
 />
 
 

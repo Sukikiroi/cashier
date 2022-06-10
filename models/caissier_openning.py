@@ -8,7 +8,7 @@ class Openning(models.Model):
  time = fields.Char(string="ساعة الافتتاح",default=datetime.now().strftime("%H:%M:%S"))
  date = fields.Date("تاريخ الافتتاح")
  balance=fields.Integer(string="الرصيد", readonly=True,default=0)
-
+ 
 
 
  def button_check_isbn(self):

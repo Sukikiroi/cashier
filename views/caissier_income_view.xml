@@ -6,38 +6,47 @@
 <form class="form">
 <header>
 <!-- Buttons will go here -->
- 
 
+
+    <span t-field="balance"></span>
 </header>
 <sheet>
 <!-- Content goes here: -->
 <group class="groupone">
- 
+ <group name="group_col1">
 <field name="time"/>
 <field name="date" />
- 
- 
-<div class="container">
-  <notebook>
-      <page string="مصنف الاوراق النقدية">
-        <group>
+<field name="balance" />      
+   <field  name="first" />
+   <field  name="first_qty" />
+</group>
+
+
+
+
+
+<span colspan="2" />
+ <group name="group_col2">
+ <field name="seconde" />
+ <field name="seconde_qty" />
+ <field name="tree" />
+ <field name="tree_qty" />
+ <field name="four" />
+ <field name="four_qty" />
+</group>
  
 
- 
-        </group>
-      
-      </page>
-   
-      <page string=" الاوراق الغير القابلة للتداول ">
-              <group>
- 
-              </group>
-        </page>
 
-      
-    </notebook>
 
-</div>
+ 
+
+  <field  name="client_code" /> 
+ <field name="operation_code" /> 
+
+
+
+
+
 </group>
 </sheet>
 </form>
@@ -53,9 +62,10 @@
  
 <field name="time"/>
 <field name="date" />
-
+<field name="balance" />    
  
-
+  <field  name="client_code" /> 
+ <field name="operation_code" />
 </tree>
 </field>
 </record>
