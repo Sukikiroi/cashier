@@ -10,6 +10,7 @@ class Openning(models.Model):
 
 
  date = fields.Date("تاريخ الافتتاح")
+ company_id = fields.Many2one('res.company', 'Company', required=True, index=True,default=lambda self: self.env.company)
 
 
 
